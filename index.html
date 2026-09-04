@@ -8,6 +8,11 @@
   <title>Sur la piste d’Anjoutey</title>
   <link rel="icon" type="image/png" href="assets/fleur-de-lys.png">
   <link rel="stylesheet" href="styles.css?v=7">
+  <script>
+    if (/FBAN|FBAV|Messenger|Instagram/i.test(navigator.userAgent)) {
+      document.documentElement.classList.add("in-app-browser");
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
