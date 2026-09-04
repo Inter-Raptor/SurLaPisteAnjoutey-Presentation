@@ -17,3 +17,12 @@ footer{padding:32px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:
 .hero-poster figcaption{position:absolute;left:16px;right:16px;bottom:8px;color:#634b2d;font-family:Georgia,"Times New Roman",serif;font-size:.85rem;font-style:italic;text-align:center}
 @media(max-width:900px){.hero-poster{width:min(650px,90vw);margin-inline:auto}.hero-poster img{width:100%}}
 @media(max-width:620px){.hero-poster{width:100%;transform:none}.hero-poster img{width:100%;border-radius:0}}
+
+/* Galerie historique : fusains et carte postale */
+.vintage-section{padding:88px max(18px,calc((100vw - 1120px)/2));background:#eee0bd;border-block:1px solid rgba(91,65,28,.2)}
+.vintage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.vintage-grid figure{position:relative;margin:0;padding:10px 10px 40px;background:#f8edcf;border:1px solid rgba(91,65,28,.42);box-shadow:0 12px 28px rgba(74,53,25,.15)}
+.vintage-grid figure:nth-child(2n){transform:rotate(.6deg)}.vintage-grid figure:nth-child(2n+1){transform:rotate(-.6deg)}
+.vintage-grid img{width:100%;height:310px;object-fit:cover;filter:sepia(.08) contrast(.98)}
+.vintage-grid figcaption{position:absolute;left:12px;right:12px;bottom:9px;color:#5e492d;font-family:Georgia,"Times New Roman",serif;font-size:.9rem;font-style:italic;text-align:center}
+@media(max-width:620px){.vintage-section{padding-top:64px;padding-bottom:64px;overflow:hidden}.vintage-grid{margin-right:-18px;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(84vw,330px);gap:14px;overflow-x:auto;padding:7px 18px 20px 3px;scroll-snap-type:x mandatory}.vintage-grid figure,.vintage-grid figure:nth-child(n){transform:none;scroll-snap-align:center}.vintage-grid img{height:225px}}
