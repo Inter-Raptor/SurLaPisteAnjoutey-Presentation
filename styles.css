@@ -26,3 +26,10 @@ footer{padding:32px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:
 .vintage-grid img{width:100%;height:310px;object-fit:cover;filter:sepia(.08) contrast(.98)}
 .vintage-grid figcaption{position:absolute;left:12px;right:12px;bottom:9px;color:#5e492d;font-family:Georgia,"Times New Roman",serif;font-size:.9rem;font-style:italic;text-align:center}
 @media(max-width:620px){.vintage-section{padding-top:64px;padding-bottom:64px;overflow:hidden}.vintage-grid{margin-right:-18px;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(84vw,330px);gap:14px;overflow-x:auto;padding:7px 18px 20px 3px;scroll-snap-type:x mandatory}.vintage-grid figure,.vintage-grid figure:nth-child(n){transform:none;scroll-snap-align:center}.vintage-grid img{height:225px}}
+
+/* Accès Web simplifié : une seule action principale */
+.hero-actions{grid-template-columns:1fr;max-width:390px}
+.install-help{max-width:590px;margin:12px 0 0;padding:11px 13px;color:#536157;background:rgba(255,255,255,.54);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;font-size:.84rem;line-height:1.45}
+.card-help{max-width:none;margin-top:4px;color:var(--muted);background:rgba(11,74,53,.06)}
+@media(max-width:900px){.hero-actions{margin-inline:auto}.install-help{margin-inline:auto;text-align:left}}
+@media(max-width:620px){.hero-actions{max-width:none;margin-inline:0}.install-help{font-size:.86rem}.mobile-actions{grid-template-columns:1fr}}
