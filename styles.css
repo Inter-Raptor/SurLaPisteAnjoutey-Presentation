@@ -60,3 +60,10 @@ footer{padding:32px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:
   html.in-app-browser body{padding-bottom:150px}
   html.in-app-browser .mobile-actions{bottom:64px}
 }
+
+/* Position stable lorsque la barre du navigateur réapparaît */
+@media(max-width:620px){
+  body{padding-bottom:150px}
+  .mobile-actions,
+  html.in-app-browser .mobile-actions{bottom:64px}
+}
