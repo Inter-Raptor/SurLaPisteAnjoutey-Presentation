@@ -34,3 +34,11 @@ footer{padding:32px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:
 @media(max-width:900px){.hero-actions{margin-inline:auto}.install-help{margin-inline:auto;text-align:left}}
 @media(max-width:620px){.hero-actions{max-width:none;margin-inline:0}.install-help{font-size:.86rem}.mobile-actions{grid-template-columns:1fr}}
 \n/* Contact */\n.contact-section{padding:76px max(18px,calc((100vw - 1120px)/2));background:rgba(255,255,255,.55);border-top:1px solid rgba(24,54,43,.1)}\n.contact-card{max-width:760px;margin:0 auto;padding:clamp(26px,5vw,46px);text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}\n.contact-card h2{margin-bottom:12px;color:var(--green-dark);font-size:clamp(2rem,4vw,3rem)}\n.contact-card>p:not(.eyebrow){max-width:620px;margin:0 auto 24px;color:var(--muted)}\n.contact-card .button{margin-inline:auto;color:var(--green-dark)}\n.contact-email{display:block;width:max-content;max-width:100%;margin:15px auto 0;color:var(--green);font-weight:800;overflow-wrap:anywhere;text-underline-offset:3px}\n@media(max-width:620px){.contact-section{padding-top:56px;padding-bottom:56px}.contact-card{text-align:left}.contact-card .button{width:100%}.contact-email{width:auto;margin-left:0}}\n
+/* Avis des visiteurs */
+.comments-section{padding:72px max(18px,calc((100vw - 1120px)/2));background:#f3e8c9;border-top:1px solid rgba(91,65,28,.18)}
+.comments-card{max-width:860px;margin:0 auto;padding:clamp(24px,5vw,46px);background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.comments-card .section-title{margin-bottom:28px}
+#cusdis_thread{min-height:250px}
+#cusdis_thread iframe{width:100%!important;min-height:330px;border:0}
+.comments-note{margin:18px 0 0;color:var(--muted);font-size:.82rem;text-align:center}
+@media(max-width:620px){.comments-section{padding-top:52px;padding-bottom:52px}.comments-card{padding:22px 16px}.comments-card .section-title{text-align:left}.comments-note{text-align:left}}
