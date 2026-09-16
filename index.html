@@ -2,12 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b4a35">
   <meta name="description" content="Découvrez Anjoutey avec une balade historique et ludique : 21 étapes principales, 20 lieux bonus, GPS, photographies anciennes et quiz pour toute la famille.">
   <title>Sur la piste d’Anjoutey</title>
   <link rel="icon" type="image/png" href="assets/fleur-de-lys.png">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles-mobile.css?v=1">
   <script>
     if (/FBAN|FBAV|Messenger|Instagram/i.test(navigator.userAgent)) {
       document.documentElement.classList.add("in-app-browser");
@@ -16,49 +16,32 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="Retour en haut"><img src="assets/fleur-de-lys.png" alt="" width="42" height="42"><span>Sur la piste d’Anjoutey</span></a>
+    <a class="brand" href="#accueil" aria-label="Retour en haut"><img src="assets/fleur-de-lys.png" alt="" width="42" height="42"><span>Sur la piste d’Anjoutey</span></a><a class="header-button" href="#installation">C’est parti ↗</a>
   </header>
 
   <main>
     <section class="hero" id="accueil">
       <div class="hero-copy">
-        <p class="eyebrow">Balade historique et ludique</p>
-        <h1>Découvrez Anjoutey autrement</h1>
-        <p class="hero-text">Parcourez une promenade d’environ 5 km dans Anjoutey. Votre téléphone vous guide vers les lieux à découvrir, leurs histoires et les quiz à réaliser en famille.</p>
-        <div class="facts" aria-label="Les points forts"><span><strong>21</strong> étapes principales sur le parcours</span><span><strong>20</strong> lieux bonus à dénicher aux alentours</span><span><strong>5 km</strong> de promenade guidée</span><span><strong>3</strong> niveaux de quiz</span></div>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.vivienjardot.surlapistedanjoutey"><span><small>Sur Android · version recommandée</small>Installer sur Google Play</span></a>
-          <a class="button button-primary" href="https://inter-raptor.github.io/SurLaPisteAnjoutey-Web/"><span><small>Sur iPhone, iPad et ordinateur</small>Ouvrir la version web</span></a>
+        <p class="eyebrow"><span class="live-dot"></span> Une aventure à deux pas de chez vous</p>
+        <h1>Un village.<br>Mille découvertes<span class="title-dot">.</span></h1>
+        <p class="hero-text">Les secrets d’Anjoutey sont sur votre chemin. Explorez, jouez et remontez le temps en famille, téléphone en main.</p>
+        <div class="facts" aria-label="La balade en quelques chiffres"><span>⌖ <strong>5 km</strong> à explorer</span><span>⚑ <strong>21 étapes</strong></span><span>✦ <strong>Quiz en famille</strong></span></div>
+        <div class="launch-panel">
+          <div class="launch-heading"><span class="step-number">1</span><div><h2>À vous de jouer !</h2><p id="device-hint">Choisissez votre appareil pour commencer.</p></div></div>
+          <div class="hero-actions">
+            <a class="launch-card android-choice" href="https://play.google.com/store/apps/details?id=com.vivienjardot.surlapistedanjoutey"><span class="device-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M11 19h2"/></svg></span><span class="launch-copy"><span class="device-label">J’ai un Android</span><strong>Installer l’application</strong><small>Sur Google Play · Gratuit</small><span class="recommendation" data-for="android" hidden>Le bon choix pour votre téléphone</span></span><span class="launch-arrow" aria-hidden="true">↗</span></a>
+            <a class="launch-card web-choice" href="https://inter-raptor.github.io/SurLaPisteAnjoutey-Web/"><span class="device-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg></span><span class="launch-copy"><span class="device-label">iPhone, iPad ou ordinateur</span><strong>Lancer la version web</strong><small>Sans installation · Gratuit</small><span class="recommendation" data-for="web" hidden>Le bon choix pour votre appareil</span></span><span class="launch-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <p class="reassurance">⌂ Envie de rester chez vous ? La visite virtuelle est aussi disponible.</p>
         </div>
-        <p class="reassurance">Balade gratuite · Visite virtuelle disponible en option</p>
-        <p class="install-help"><strong>Sur Android :</strong> privilégiez l’application Google Play.<br><strong>Sur les autres appareils :</strong> lancez la version web directement dans votre navigateur, sans installation.</p>
       </div>
-      <figure class="hero-poster"><img src="assets/dessin%20anjoutey.png" alt="Vue d’Anjoutey, de son église et de la rivière, interprétée au fusain"><figcaption>Anjoutey, entre patrimoine et promenade</figcaption></figure>
+      <figure class="hero-poster"><img src="assets/dessin%20anjoutey.png" alt="L’église et la rivière d’Anjoutey dessinées au fusain" fetchpriority="high"><figcaption><span>LE TERRAIN DE JEU</span>Anjoutey, naturellement.</figcaption><span class="poster-sticker">Prenez l’air.<br>Ouvrez l’œil !</span></figure>
     </section>
 
-    <section class="comments-section" id="avis" aria-labelledby="comments-title">
-      <div class="comments-card">
-        <div class="section-title compact">
-          <p class="eyebrow">Votre avis compte</p>
-          <h2 id="comments-title">Partagez votre avis ou vos souvenirs</h2>
-          <p>Une idée, une information sur Anjoutey, un souvenir à raconter ou simplement un petit mot pour dire que la balade vous plaît&nbsp;? Écrivez-le ici.</p>
-        </div>
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="e8873aae-bc9a-4a74-b38a-35bf6d6b26c6"
-          data-page-id="sur-la-piste-anjoutey-accueil"
-          data-page-url="https://inter-raptor.github.io/SurLaPisteAnjoutey-Presentation/"
-          data-page-title="Sur la piste d’Anjoutey"
-          data-theme="light"
-        ></div>
-        <script defer src="https://cusdis.com/js/widget/lang/fr.js"></script>
-        <script defer src="https://cusdis.com/js/cusdis.es.js"></script>
-        <p class="comments-note">Les messages sont vérifiés avant leur publication afin d’éviter les contenus indésirables.</p>
-      </div>
-    </section>
+
 
     <section class="intro-section" aria-labelledby="presentation-title">
-      <div class="section-title"><p class="eyebrow">Une aventure locale</p><h2 id="presentation-title">Marchez, observez, apprenez et jouez</h2><p>La balade vous conduit d’étape en étape dans Anjoutey. À chaque lieu, découvrez une histoire, regardez des photographies anciennes puis répondez à un quiz adapté à l’âge des participants.</p></div>
+      <div class="section-title"><p class="eyebrow">La curiosité vous va bien</p><h2 id="presentation-title">Une promenade. Plein de façons de s’amuser.</h2><p>La balade vous conduit d’étape en étape dans Anjoutey. À chaque lieu, découvrez une histoire, regardez des photographies anciennes puis répondez à un quiz adapté à l’âge des participants.</p></div>
       <div class="feature-grid">
         <article class="feature-card"><span class="feature-icon" aria-hidden="true">⌖</span><div><h3>Balade guidée</h3><p>La carte et le GPS vous accompagnent tout au long du parcours dans le village.</p></div></article>
         <article class="feature-card"><span class="feature-icon" aria-hidden="true">♜</span><div><h3>Histoire du village</h3><p>Explorez le patrimoine local grâce aux récits et aux photographies d’autrefois.</p></div></article>
@@ -99,6 +82,26 @@
         <article class="access-card"><span class="access-label">iPhone, iPad et ordinateur</span><h3>Version web</h3><p>Sur les autres appareils, découvrez la balade directement dans votre navigateur, sans installation. La version web reste aussi accessible sur Android.</p><a class="button button-primary full" href="https://inter-raptor.github.io/SurLaPisteAnjoutey-Web/">Ouvrir la version web</a><p class="install-help card-help"><strong>Sur iPhone ou iPad :</strong> pour ajouter un raccourci, ouvrez la page dans Safari, puis choisissez Partager et « Sur l’écran d’accueil ».</p></article>
       </div>
     </section>
+    <section class="comments-section" id="avis" aria-labelledby="comments-title">
+      <div class="comments-card">
+        <div class="section-title compact">
+          <p class="eyebrow">Votre avis compte</p>
+          <h2 id="comments-title">Partagez votre avis ou vos souvenirs</h2>
+          <p>Une idée, une information sur Anjoutey, un souvenir à raconter ou simplement un petit mot pour dire que la balade vous plaît&nbsp;? Écrivez-le ici.</p>
+        </div>
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="e8873aae-bc9a-4a74-b38a-35bf6d6b26c6"
+          data-page-id="sur-la-piste-anjoutey-accueil"
+          data-page-url="https://inter-raptor.github.io/SurLaPisteAnjoutey-Presentation/"
+          data-page-title="Sur la piste d’Anjoutey"
+          data-theme="light"
+        ></div>
+        <script defer src="https://cusdis.com/js/widget/lang/fr.js"></script>
+        <script defer src="https://cusdis.com/js/cusdis.es.js"></script>
+        <p class="comments-note">Les messages sont vérifiés avant leur publication afin d’éviter les contenus indésirables.</p>
+      </div>
+    </section>
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="contact-card">
         <p class="eyebrow">Une idée à partager ?</p>
@@ -111,6 +114,22 @@
   </main>
 
   <footer><img src="assets/fleur-de-lys.png" alt="" width="36" height="36"><div><strong>Sur la piste d’Anjoutey</strong><br><span>Découvrez le patrimoine du village en vous amusant.</span></div><a href="https://inter-raptor.github.io/sur-la-piste-anjoutey/">Confidentialité</a></footer>
-  <nav class="mobile-actions" aria-label="Accès rapide à la balade"><a href="https://play.google.com/store/apps/details?id=com.vivienjardot.surlapistedanjoutey" aria-label="Installer l’application Android sur Google Play">Android · Google Play</a><a href="https://inter-raptor.github.io/SurLaPisteAnjoutey-Web/" aria-label="Ouvrir la version web sur iPhone, iPad ou ordinateur">Version web</a></nav>
+  <nav class="mobile-actions" aria-label="Commencer la balade"><div class="mobile-context"><small>Prêt pour l’aventure ?</small><strong id="mobile-caption">Choisissez votre version</strong></div><a id="mobile-launch" href="#installation">C’est parti <span aria-hidden="true">↗</span></a></nav>
+  <script>
+    (() => {
+      const ua = navigator.userAgent;
+      const android = /Android/i.test(ua);
+      const ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      const mode = android ? 'android' : 'web';
+      document.documentElement.dataset.device = mode;
+      document.querySelectorAll('[data-for="' + mode + '"]').forEach(el => el.hidden = false);
+      document.querySelector('.' + (android ? 'android-choice' : 'web-choice')).classList.add('recommended');
+      document.getElementById('device-hint').textContent = android ? 'Sur votre Android, choisissez l’application Google Play.' : ios ? 'Sur votre iPhone ou iPad, la balade s’ouvre dans le navigateur.' : 'Sur cet appareil, commencez directement dans votre navigateur.';
+      const mobile = document.getElementById('mobile-launch');
+      mobile.href = android ? 'https://play.google.com/store/apps/details?id=com.vivienjardot.surlapistedanjoutey' : 'https://inter-raptor.github.io/SurLaPisteAnjoutey-Web/';
+      mobile.innerHTML = (android ? 'Installer' : 'Lancer la balade') + ' <span aria-hidden="true">↗</span>';
+      document.getElementById('mobile-caption').textContent = android ? 'Application Android · gratuite' : 'Version web · sans installation';
+    })();
+  </script>
 </body>
 </html>
