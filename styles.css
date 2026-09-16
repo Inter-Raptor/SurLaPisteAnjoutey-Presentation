@@ -67,3 +67,12 @@ footer{padding:32px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:
   .mobile-actions,
   html.in-app-browser .mobile-actions{bottom:64px}
 }
+
+/* Deux accès de même importance, adaptés à chaque appareil */
+.hero-actions{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+.hero-actions .button{min-width:0}
+@media(max-width:620px){
+  .hero-actions{grid-template-columns:1fr}
+  .mobile-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mobile-actions a{padding:10px 6px;text-align:center;font-size:.85rem;line-height:1.3}
+}
